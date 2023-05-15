@@ -1,5 +1,6 @@
 @use './colors';
-@use './header';
+@use './sections/header';
+@use './sections/footer';
 
 * {
   box-sizing: border-box;
@@ -16,4 +17,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

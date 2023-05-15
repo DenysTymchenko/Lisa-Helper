@@ -1,0 +1,13 @@
+@use '../colors';
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: colors.$accent;
+  padding: 10px 0px;
+
+  &__logo {
+    font-size: 2rem;
+  }
+}
