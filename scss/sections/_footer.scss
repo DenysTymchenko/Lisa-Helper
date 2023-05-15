@@ -2,8 +2,29 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15px;
   background-color: colors.$accent;
   padding: 10px 0px;
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .footer__link {
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      border-radius: 100%;
+      padding: 6px;
+
+      &-img {
+        width: 100%;
+      }
+    }
+  }
 }

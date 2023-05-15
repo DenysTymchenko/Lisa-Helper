@@ -11,10 +11,28 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15px;
   background-color: #3C486B;
   padding: 10px 0px;
+}
+.footer__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer__links .footer__link {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 100%;
+  padding: 6px;
+}
+.footer__links .footer__link-img {
+  width: 100%;
 }
 
 * {
