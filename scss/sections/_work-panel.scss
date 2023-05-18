@@ -42,8 +42,23 @@
   }
 
   &__letters {
-    width: fit-content;
-    padding: 10px;
-    background-color: colors.$main;
+    &-label {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      .work-panel__letter {
+        width: 30px;
+        padding: 10px;
+        background-color: colors.$main;
+        cursor: pointer;
+      }
+    }
   }
 }

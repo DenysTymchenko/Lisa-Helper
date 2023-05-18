@@ -44,10 +44,21 @@
 .work-panel__numbers-replacer > input {
   width: 10%;
 }
-.work-panel__letters {
-  width: fit-content;
+.work-panel__letters-label {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.work-panel__letters-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.work-panel__letters-wrapper .work-panel__letter {
+  width: 30px;
   padding: 10px;
   background-color: #2d6a4f;
+  cursor: pointer;
 }
 
 .footer {
