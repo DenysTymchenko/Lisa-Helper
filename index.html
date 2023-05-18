@@ -14,7 +14,34 @@
   <header class="header">
     <a href="./index.html" class="header__logo">Lisa Helper</a>
   </header>
-  <main>check</main>
+
+  <main>
+    <div class="work-panel">
+      <div class="work-panel__query">
+        <h2>Enter your query</h2>
+        <input type="text" name="query" id="query">
+      </div>
+
+      <div class="work-panel__numbers">
+        <div class="work-panel__numbers-toggler">
+          <input type="checkbox" name="numbers_toggler" id="numbers_toggler">
+          <label for="numbers_toggler">Replace numbers</label>
+        </div>
+
+        <div class="work-panel__numbers-replacer">
+          Replace
+          <input type="number" name="original_number" id="original_number">
+          To
+          <input type="number" name="changed_number" id="changed_number">
+        </div>
+      </div>
+
+      <div class="work-panel__letters">
+        <p class="work-panel__letter">A</p>
+      </div>
+    </div>
+  </main>
+
   <footer class="footer">
     <p class="footer__creator">Created by: Denys Tymchenko</p>
     <div class="footer__links">
