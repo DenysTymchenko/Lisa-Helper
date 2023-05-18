@@ -10,6 +10,7 @@
 }
 
 .work-panel {
+  width: 30%;
   background-color: #1b4332;
   padding: 20px;
 }
@@ -90,6 +91,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.d-none {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
