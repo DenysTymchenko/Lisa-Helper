@@ -1,9 +1,12 @@
+import { copyNewQueryToClipboard } from './controller.js';
+
 export function renderLetters(letter) {
   const lettersDiv = document.querySelector('.work-panel__letters-wrapper');
   
   const letterP = document.createElement('p');
   letterP.classList.add('work-panel__letter');
   letterP.innerText = letter;
+  letterP.addEventListener('click', () => copyNewQueryToClipboard(letter))
 
   lettersDiv.append(letterP);
 }
