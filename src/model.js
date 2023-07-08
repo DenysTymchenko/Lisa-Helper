@@ -1,12 +1,22 @@
 export function getNewQuery(query, newValue) {
-  const newQuery = query.replaceAll(getOldValue(query), newValue);
+  const newQuery = query.replaceAll(getDefaultValue(query), newValue);
   return newQuery;
 }
 
-function getOldValue(query) {
+function getDefaultValue(query) {
+  let defaultValue = '';
+
   query.split('');
-  const oldLetter = query[query.indexOf('!') + 1];
-  return oldLetter + getDefaultNumber(query);
+  for (let i = query.indexOf(')') - 2; i >= 0; i--) {
+    if (!isNaN(query[i])) {
+      defaultValue += query[i];
+    } else {
+      defaultValue += query[i];
+      break;
+    }
+  };
+  
+  return defaultValue.split('').reverse().join('');
 }
 
 export function getDefaultNumber(query) {
